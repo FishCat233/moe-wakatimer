@@ -8,15 +8,14 @@
 
 <h1>Moe Wakatimer</h1>
 
-![GitHub Release](https://img.shields.io/github/v/release/FishCat233/moe-wakatimer) 
+![GitHub Release](https://img.shields.io/github/v/release/FishCat233/moe-wakatimer) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/FishCat233/moe-wakatimer/total)
 [![wakatime](https://wakatime.com/badge/github/FishCat233/moe-wakatimer.svg)](https://wakatime.com/badge/github/FishCat233/moe-wakatimer)
 
 <h5>一个基于 Cloudflare Workers 的 Wakatime 统计展示工具，将你的编程时间转换为可爱的 Moe Counter 风格显示。</h5>
 
+![示例](https://count.getloli.com/get/@moe-wakatimer?theme=rule34)
+
 </div>
-
-
-![示例](https://count.getloli.com/get/@moe-wakatimer?theme=moebooru_lewd)
 
 ## ✨ 特性
 
