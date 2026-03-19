@@ -102,7 +102,7 @@ https://your-worker.your-subdomain.workers.dev/
 ### 使用示例
 
 ```bash
-# 显示总编程小时数（默认）
+# 显示总编程秒数（默认）
 https://your-worker.workers.dev/
 
 # 显示总编程分钟数
@@ -178,8 +178,7 @@ moe-wakatimer/
 
 如有问题或建议，请通过以下方式联系：
 
-- 提交 [Issue](https://github.com/your-username/moe-wakatimer/issues)
-- 发送邮件：your-email@example.com
+- 提交 [Issue](https://github.com/FishCat233/moe-wakatimer/issues)
 
 ---
 
