@@ -1,7 +1,7 @@
 {
 	"name": "moe-wakatimer",
-	"version": "0.0.0",
-	"private": true,
+	"version": "0.0.1",
+	"private": false,
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
