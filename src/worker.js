@@ -10,7 +10,7 @@ export default {
     try {
       // 2. 获取 Wakatime 累计时长
       // 注意：Wakatime API Key 需要进行 Base64 编码进行 Basic Auth
-      const auth = btoa(WAKATIME_API_KEY);
+      const auth = btoa(WAKATIME_API_KEY + ':');
       const response = await fetch(WAKATIME_URL, {
         headers: { "Authorization": `Basic ${auth}` }
       });
