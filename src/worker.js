@@ -4,7 +4,7 @@ export default {
     const { searchParams } = new URL(request.url);
     const WAKATIME_API_KEY = env.WAKATIME_API_KEY;
     const WAKATIME_URL = "https://wakatime.com/api/v1/users/current/all_time_since_today";
-    const timeType = searchParams.get('time_type') || 'second';
+    const timeType = searchParams.get('time_type') || 'hour';
     const theme = searchParams.get('theme') || 'booru-lewd';
 
     try {
