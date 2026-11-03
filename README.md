@@ -23,15 +23,20 @@
 - 🎨 **多种主题选择** - 支持多种 Moe Counter 主题风格
 - ⏱️ **灵活时间单位** - 支持秒、分钟、小时三种时间显示格式
 - ☁️ **基于 Cloudflare Workers** - 快速、免费、全球部署
-- 🔒 **安全可靠** - API Key 通过环境变量管理，无敏感信息泄露风险
+- 🔒 **安全可靠** - OAuth token 存于 Worker Secret，不写进代码和 URL
 
 ## 🚀 快速开始
 
 ### 前置要求
 
-- [Wakatime](https://wakatime.com/) 账户和 API Key
+- [Wakatime](https://wakatime.com/) 账户
 - [Cloudflare](https://cloudflare.com/) 账户
 - [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) 工具
+
+### 获取 Wakatime Token
+
+1. 打开 https://wakatime.com/oauth
+2. 复制 token（形如 `waka_tok_xxx`）
 
 ### 部署方式
 
@@ -50,8 +55,8 @@
 3. **配置环境变量**
    - 在 Worker 设置中找到"环境变量"
    - 添加变量：
-     - **变量名**: `WAKATIME_API_KEY`
-     - **值**: 你的 Wakatime API Key
+     - **变量名**: `WAKATIME_TOKEN`
+     - **值**: 上一步拿到的 OAuth token
    - 保存设置
 
 4. **完成部署**
@@ -74,8 +79,8 @@ npm install
 3. **配置环境变量**
 ```bash
 # 在 Cloudflare Workers 中设置环境变量
-wrangler secret put WAKATIME_API_KEY
-# 然后输入你的 Wakatime API Key
+wrangler secret put WAKATIME_TOKEN
+# 然后粘贴上一步生成的 OAuth token
 ```
 
 4. **部署到 Cloudflare**

@@ -2,17 +2,15 @@ export default {
   async fetch(request, env) {
     // 1. Wakatime 相关配置 (建议通过 env 变量存储)
     const { searchParams } = new URL(request.url);
-    const WAKATIME_API_KEY = env.WAKATIME_API_KEY;
+    const WAKATIME_TOKEN = env.WAKATIME_TOKEN;
     const WAKATIME_URL = "https://wakatime.com/api/v1/users/current/all_time_since_today";
     const timeType = searchParams.get('time_type') || 'hour';
     const theme = searchParams.get('theme') || 'booru-lewd';
 
     try {
       // 2. 获取 Wakatime 累计时长
-      // 注意：Wakatime API Key 需要进行 Base64 编码进行 Basic Auth
-      const auth = btoa(WAKATIME_API_KEY + ':');
       const response = await fetch(WAKATIME_URL, {
-        headers: { "Authorization": `Basic ${auth}` }
+        headers: { "Authorization": `Bearer ${WAKATIME_TOKEN}` }
       });
       const data = await response.json();
 
