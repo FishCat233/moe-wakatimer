@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/FishCat233/moe-wakatimer/compare/0.0.2...0.0.3) (2026-11-03)
+
+
+### Features
+
+* 更新 wakatime 的鉴权方式到个人 oauth ([999bd93](https://github.com/FishCat233/moe-wakatimer/commit/999bd93cc36d739f4b510ecc4a99dbee27387312))
+
 ## [0.0.2](https://github.com/FishCat233/moe-wakatimer/compare/v0.0.1...0.0.2) (2026-07-05)
 
 
